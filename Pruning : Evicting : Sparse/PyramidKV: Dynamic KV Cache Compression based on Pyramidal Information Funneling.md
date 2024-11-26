@@ -12,6 +12,8 @@ The paper addresses a critical issue in large language models (LLMs), namely the
 
 ### **Key Idea and Technique**
 
+![image-20241126204724416](PyramidKV: Dynamic KV Cache Compression based on Pyramidal Information Funneling/image-20241126204724416.png)
+
 **Pyramidal Information Funneling** The authors observe that attention in LLMs is not uniformly distributed across layers. Lower layers exhibit more scattered attention, while higher layers focus on more critical tokens, forming a pyramidal pattern.
 
 To capitalize on this, PyramidKV dynamically adjusts the KV cache size across different layers:
