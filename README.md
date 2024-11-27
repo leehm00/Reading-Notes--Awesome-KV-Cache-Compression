@@ -3,7 +3,6 @@
  <div align="center"> 
 
 [![LICENSE](https://img.shields.io/github/license/October2001/Awesome-KV-Cache-Compression)](https://github.com/October2001/Awesome-KV-Cache-Compression/blob/main/LICENSE)
-[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![commit](https://img.shields.io/github/last-commit/leehm00/Reading-Notes--Awesome-KV-Cache-Compression?color=blue)](https://github.com/leehm00/Reading-Notes--Awesome-KV-Cache-Compression/master)
 [![PR](https://img.shields.io/badge/PRs-Welcome-red)](https://github.com/October2001/Awesome-KV-Cache-Compression/pulls)
 [![GitHub Repo stars](https://img.shields.io/github/stars/leehm00/Reading-Notes--Awesome-KV-Cache-Compression)](https://github.com/leehm00/Reading-Notes--Awesome-KV-Cache-Compression)
@@ -15,7 +14,7 @@
 ## 📢 News
 🎉 [2024-07-23] Project Beginning 🥳
 
-Paper list migrated from (README/Awesome-KV-Cache-Compression-20241126150435283)](https://github.com/October2001/Awesome-KV-Cache-Compression)
+Paper list migrated from [Awesome-KV-Cache-Compression](https://github.com/October2001/Awesome-KV-Cache-Compression)
 
 ## 📜 Notice
 
