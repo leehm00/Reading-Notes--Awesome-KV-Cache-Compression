@@ -12,7 +12,7 @@
 
 
 ## 📢 News
-🎉 [2024-07-23] Project Beginning 🥳
+🎉 [2024-11-26] Project Beginning 🥳
 
 Paper list migrated from [Awesome-KV-Cache-Compression](https://github.com/October2001/Awesome-KV-Cache-Compression)
 
