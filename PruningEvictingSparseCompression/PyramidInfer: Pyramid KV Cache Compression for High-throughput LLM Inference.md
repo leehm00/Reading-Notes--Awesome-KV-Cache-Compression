@@ -9,17 +9,23 @@ The paper introduces PyramidInfer, a method designed to address the challenge of
 
 ## Challenges
 - **Inter-layer Dependency**: Existing methods do not consider the inter-layer dependency between layers, leading to suboptimal compression.
+
 - **Pre-computation Overhead**: Methods that compress the KV cache often require pre-computing the entire cache, which itself consumes a lot of memory, particularly for longer prompts and larger models.
+
 - **Maintaining Performance**: Reducing the KV cache must not significantly impact the performance and quality of the generated text.
 
-## Key Idea and Technique
+  
 
-![image-20241127103203508](PyramidInfer: Pyramid KV Cache Compression for High-throughput LLM Inference/image-20241127103203508.png)
+  ![image-20241127103639907](PyramidInfer: Pyramid KV Cache Compression for High-throughput LLM Inference/image-20241127103639907.png)
+
+## Key Idea and Technique
 
 - **Inference Context Redundancy (ICR)**: The authors observe that the number of crucial keys and values that influence future generations decreases layer by layer. They propose to retain only these crucial contexts, which are identified by the consistency in attention weights.
 - **Recent Attention Consistency (RAC)**: The authors find that recent tokens closer to the last token have more consistent attention patterns, indicating that they can be used as an oracle to select the important KV cache for future generations.
 - **Layer-wise Selection of Pivotal Context (PvC)**: PyramidInfer selects and retains the pivotal context (PvC) at each layer, gradually reducing the length of the KV cache as the layers get deeper, forming a pyramid-like structure.
 - **Prefill and Generation Phase Optimization**: Unlike other methods, PyramidInfer is capable of compressing the KV cache in both the prefill and generation phases, ensuring that the initial KV cache is smaller and more efficient.
+
+![image-20241127103203508](PyramidInfer: Pyramid KV Cache Compression for High-throughput LLM Inference/image-20241127103203508.png)
 
 ## Results
 - **Memory Reduction**: PyramidInfer reduces over 54% of the GPU memory usage in the KV cache while maintaining or even improving performance.
