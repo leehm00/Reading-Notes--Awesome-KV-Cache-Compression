@@ -38,5 +38,3 @@ The paper introduces PyramidInfer, a method designed to address the challenge of
 - **Integration with Other Techniques**: Investigate how PyramidInfer can be combined with other non-KV-cache compression methods, such as Deepspeed, to further enhance efficiency.
 - **Generalization to Other Models**: Extend the application of PyramidInfer to other types of models and architectures beyond LLMs to see if similar benefits can be achieved.
 
-## Conclusion
-PyramidInfer presents a promising solution for optimizing the deployment of LLMs in resource-constrained environments by efficiently compressing the KV cache. The method addresses the critical issue of high GPU memory usage and improves throughput, making it a valuable contribution to the field of LLM inference.

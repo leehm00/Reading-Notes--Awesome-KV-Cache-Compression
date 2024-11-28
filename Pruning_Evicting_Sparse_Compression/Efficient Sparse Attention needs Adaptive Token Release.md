@@ -28,6 +28,5 @@ The paper proposes **ADORE (ADaptive tOken RElease)**:
 3. **Integration with Hardware Systems**: Combine ADORE with optimized GPU memory management frameworks like DeepSpeed for enhanced real-world efficiency.
 4. **Generalization Across Tasks**: Extend the method's applicability to non-text tasks (e.g., vision transformers) to evaluate generalizability.
 
-## Conclusion
-ADORE successfully balances efficiency and accuracy in sparse attention mechanisms for LLMs, offering significant improvements in inference throughput. Its design is modular and can complement other optimization techniques for LLM inference. However, the fine-tuning complexity remains a limitation, which could be a key area for future improvement.
+
 
